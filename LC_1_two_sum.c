@@ -9,7 +9,7 @@ int* twoSum_add(int* nums, int numsSize, int target, int* returnSize) {
     int j = 0;
     int tmp = 0;
     int *memory;
-    memory = malloc(sizeof(int)*2);
+    memory = (int *)malloc(sizeof(int)*2);
 
     for(i = 0; i < numsSize; i++){
         for(j = (i+1); j < numsSize; j++){
@@ -29,7 +29,7 @@ int* twoSum_minus(int* nums, int numsSize, int target, int* returnSize){
     int j = 0;
     int tmp = 0;
     int *memory;
-    memory = malloc(sizeof(int)*2);
+    memory = (int *)malloc(sizeof(int)*2);
 
     for( i = 0; i < numsSize; i++){
         tmp = (target - nums[i]);
